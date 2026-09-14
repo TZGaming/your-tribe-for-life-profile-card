@@ -1,16 +1,28 @@
 :root {
     --bg-gradient-color1: #0065FD;
     --bg-gradient-color2: #002E74;
-} 
+}
+
+@font-face {
+    font-family: PUSAB;
+    src: url(src/lib/assets/PUSAB.otf);
+}
 
 body {
     height: 100vh;
     width: 100vw;
     margin: 0;
     background: linear-gradient(180deg, var(--bg-gradient-color1) 0%, var(--bg-gradient-color2) 100%);
+    font-family: PUSAB;
+    color: white;
+}
+
+h1 {
+    font-weight: normal;
 }
 
 .corner {
+    z-index: -1;
     &.top-left {
         position: fixed;
         transform: scaleY(-1);
@@ -37,4 +49,8 @@ body {
         bottom: 0px;
         right: 0px;
     }
+}
+
+article {
+    padding: 5rem;
 }
