@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.corner {
+    &.top-left {
+        position: fixed;
+        transform: scaleY(-1);
+        top: 0px;
+        left: 0px;
+    }
+
+    &.top-right {
+        position: fixed;
+        transform: scaleY(-1) scaleX(-1);
+        top: 0px;
+        right: 0px;
+    }
+
+    &.bottom-left {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    &.bottom-right {
+        position: fixed;
+        transform: scaleX(-1);
+        bottom: 0px;
+        right: 0px;
+    }
+}
