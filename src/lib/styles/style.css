@@ -1,6 +1,13 @@
 :root {
     --bg-gradient-color1: #0065FD;
     --bg-gradient-color2: #002E74;
+
+    --button-gradient-color1: #C1F64E;
+    --button-gradient-color2: #46A20D;
+
+    --popup-bg-color: #BF723E;
+
+    --border-radius: 8px;
 }
 
 @font-face {
@@ -10,15 +17,50 @@
 
 body {
     height: 100vh;
-    width: 100vw;
     margin: 0;
     background: linear-gradient(180deg, var(--bg-gradient-color1) 0%, var(--bg-gradient-color2) 100%);
     font-family: PUSAB;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
     color: white;
 }
 
 h1 {
     font-weight: normal;
+}
+
+main {
+    padding: 6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+article {
+    max-width: 1000px;
+    min-height: 500px;
+    padding: 2rem;
+    background-color: var(--popup-bg-color);
+    border-radius: var(--border-radius);
+}
+
+.info-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    button {
+        background: linear-gradient(180deg, var(--button-gradient-color1) 0%, var(--button-gradient-color2) 100%);
+        border: none;
+        border-radius: var(--border-radius);
+        color: white;
+        font-family: PUSAB;
+        font-size: 2rem;
+        text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+        padding: 1rem 2rem;
+        min-width: 300px;
+    }
 }
 
 .corner {
@@ -49,8 +91,4 @@ h1 {
         bottom: 0px;
         right: 0px;
     }
-}
-
-article {
-    padding: 5rem;
 }
