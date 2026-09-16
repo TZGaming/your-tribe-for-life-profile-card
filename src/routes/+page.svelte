@@ -17,8 +17,8 @@
     </article>
 
     <div class="info-buttons">
-        <button>Algemene info</button>
-        <button>Socials</button>
-        <button>Extra content</button>
+        <a href="#info">Algemene info</a>
+        <a href="#socials">Socials</a>
+        <a href="#extra">Extra content</a>
     </div>
 </main>
