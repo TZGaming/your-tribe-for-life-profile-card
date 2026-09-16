@@ -4,10 +4,14 @@
 
     --button-gradient-color1: #C1F64E;
     --button-gradient-color2: #46A20D;
+    --button-shadow-bottom: #366812;
 
     --popup-bg-color: #BF723E;
+    --popup-shadow-top: #FFAA55;
+    --popup-shadow-bottom: #553311;
 
     --border-radius: 8px;
+    --outline-size: 3px;
 }
 
 @font-face {
@@ -39,11 +43,17 @@ main {
 }
 
 article {
-    max-width: 1000px;
-    min-height: 500px;
+    max-width: 800px;
+    min-height: 400px;
     padding: 2rem;
     background-color: var(--popup-bg-color);
     border-radius: var(--border-radius);
+    outline: var(--outline-size) white solid;
+    border: var(--outline-size) black solid;
+    -webkit-box-shadow: inset 0px 3px 0px 0px var(--popup-shadow-top), 
+                        inset 0px -3px 0px 0px var(--popup-shadow-bottom); 
+    box-shadow: inset 0px 3px 0px 0px var(--popup-shadow-top), 
+                inset 0px -3px 0px 0px var(--popup-shadow-bottom);
 }
 
 .info-buttons{
@@ -61,6 +71,10 @@ article {
         text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
         padding: 1rem 2rem;
         min-width: 300px;
+        outline: var(--outline-size) white solid;
+        border: var(--outline-size) black solid;
+        -webkit-box-shadow: inset 0px -3px 0px 0px var(--button-shadow-bottom);
+        box-shadow: inset 0px -3px 0px 0px var(--button-shadow-bottom);
     }
 }
 
