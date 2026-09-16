@@ -54,6 +54,22 @@ article {
                         inset 0px -3px 0px 0px var(--popup-shadow-bottom); 
     box-shadow: inset 0px 3px 0px 0px var(--popup-shadow-top), 
                 inset 0px -3px 0px 0px var(--popup-shadow-bottom);
+
+    p {
+        max-width: 400px;
+    }
+}
+
+.general-info-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+        border-radius: var(--border-radius);
+        object-fit: cover;
+    }
 }
 
 .info-buttons{
