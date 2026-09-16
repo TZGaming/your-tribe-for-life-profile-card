@@ -75,6 +75,12 @@ article {
         border: var(--outline-size) black solid;
         -webkit-box-shadow: inset 0px -3px 0px 0px var(--button-shadow-bottom);
         box-shadow: inset 0px -3px 0px 0px var(--button-shadow-bottom);
+        transition: scale .75s linear(0, 0.01 0.7%, 0.039 1.4%, 0.159 3%, 0.807 8.6%, 1.034 11%, 1.177 13.4%, 1.217 14.6%, 1.238 15.8%, 1.24 17.2%, 1.221 18.8%, 1.001 27.2%, 0.961 29.7%, 0.943 32.3%, 0.946 35.4%, 0.999 43.7%, 1.014 48.7%, 0.997 65%, 1);
+    }
+
+    :hover {
+        scale: 1.075;
+        cursor: pointer;
     }
 }
 
