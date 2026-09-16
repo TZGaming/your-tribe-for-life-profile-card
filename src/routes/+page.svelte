@@ -17,8 +17,8 @@
     </article>
 
     <div class="info-buttons">
-        <button>Knop 1</button>
-        <button>Knop 2</button>
-        <button>Knop 3</button>
+        <button>Algemene info</button>
+        <button>Socials</button>
+        <button>Extra content</button>
     </div>
 </main>
