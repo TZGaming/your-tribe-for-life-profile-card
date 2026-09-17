@@ -30,6 +30,7 @@ body {
 
 h1 {
     font-weight: normal;
+    font-size: 2.5rem;
 }
 
 main {
@@ -43,7 +44,7 @@ main {
 }
 
 article {
-    max-width: 800px;
+    width: 750px;
     min-height: 400px;
     padding: 2rem;
     background-color: var(--popup-bg-color);
@@ -56,7 +57,34 @@ article {
                 inset 0px -3px 0px 0px var(--popup-shadow-bottom);
 
     p {
-        max-width: 400px;
+        max-width: 450px;
+        font-size: 1.2rem;
+    }
+
+    .games-grid {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+#info {
+    display: none;
+    &:target {
+        display: block;
+    }
+}
+
+#socials {
+    display: none;
+    &:target {
+        display: block;
+    }
+}
+
+#extra {
+    display: none;
+    &:target {
+        display: block;
     }
 }
 
