@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: PUSAB;
-    src: url(src/lib/assets/PUSAB.otf);
+    src: url(../assets/PUSAB.otf);
 }
 
 body {
