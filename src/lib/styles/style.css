@@ -29,8 +29,11 @@ body {
 }
 
 h1 {
-    font-weight: normal;
     font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
 }
 
 main {
@@ -44,7 +47,8 @@ main {
 }
 
 article {
-    width: 750px;
+    max-width: 750px;
+    min-width: 750px;
     min-height: 400px;
     padding: 2rem;
     background-color: var(--popup-bg-color);
@@ -64,6 +68,23 @@ article {
     .games-grid {
         display: flex;
         flex-direction: row;
+        gap: 1rem;
+
+        .game-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            img {
+                border-radius: var(--border-radius);
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 

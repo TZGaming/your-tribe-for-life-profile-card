@@ -28,10 +28,11 @@
     <article id="extra">
         <h1>Extra content</h1>
 
+        <h2>Favoriete games:</h2>
         <div class="games-grid">
             {#each Object.entries(customData.games) as [key, game]}
                 <div class="game-card">
-                    <img src={game.image} width="100" height="100" alt={game.title} />
+                    <img src={game.image} width="125" height="125" alt={game.title} />
                     <p>{game.title}</p>
                 </div>
             {/each}
