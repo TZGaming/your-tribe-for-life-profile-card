@@ -1,9 +1,12 @@
 <script>
+    import headerLogo from '$lib/assets/logo-header.png';
+
     let { data } = $props();
     const person = $derived(data.person);
-
     const customData = $derived(JSON.parse(person.custom));
 </script>
+
+<img src={headerLogo} alt="Header Logo" width="900" style="position: fixed; top: 40px; left: 50%; transform: translateX(-50%);"/>
 
 <main>
     <article id="info">

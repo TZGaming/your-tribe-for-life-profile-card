@@ -45,6 +45,7 @@ main {
 
 article {
     position: fixed;
+    top: 30%;
     right: 12%;
     min-width: 680px;
     min-height: 400px;
@@ -128,6 +129,7 @@ article {
     flex-direction: column;
     position: fixed;
     left: 12%;
+    top: 40%;
 
     a {
         justify-content: center;
